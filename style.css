@@ -8,30 +8,19 @@
     font-size: 62.5%; 
     --background-color-card: #FFFAFA;
     --color-text: #874938;
+    --color-button: #B2644F;
+    --color-button-hover:#d67558;
     --screen2-message: #C5EDFF;
+    --color-white: #fff;
     --color-black:#000;
-}
-.hide{
-    display: none;
-}
-
-.screen{
-    width: min(42.8rem, 90%);   
-    height: fit-content;
-    padding: 4.8rem 6.4rem 6.4rem 6.4rem;  
-
-    border-radius: 5px; 
-    background-color: var(--background-color-card);
-    box-shadow: 0rem 2rem 5rem 0rem rgba(0, 0, 0, 0.80); 
-}
-.phrase{
-    text-align: center;
-    color:var(--color-text); 
-}
+}  
 
 h1{
     text-align: center; 
-    font-family: "Montserrat", sans-serif;  
+    font-family: "Montserrat", sans-serif; 
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700; 
     
 }
 
@@ -43,39 +32,143 @@ p{
 body{
     font-size: 1.6rem;
     background: linear-gradient(45deg, #874938 0%, #8b4f24 100%);
-}   
+}  
+ 
 
  /*screen 1*/
 .screen1{ 
     margin:23.9rem auto;  
+    width: min(42.8rem, 90%);   
+    height: fit-content;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;  
+
+    border-radius: 5px; 
+    background-color: var(--background-color-card);
+    box-shadow: 0rem 2rem 5rem 0rem rgba(0, 0, 0, 0.80);
 } 
 
-.screen1 h1{
-    padding-bottom: 1.4rem; 
+.content{
+    text-align: center;
+    color:var(--color-text);
+} 
+
+.screen1 p{
+    padding:  1.4rem 0rem 2.6rem 0rem;
+    
 }
 
-.screen1 img{
-    padding-top: 2.6rem;
+.screen1 button{
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: transparent;
+}
+
+.screen1 img{  
+    text-align: center;
+}
+
+.screen1 img:hover {
+    -webkit-animation: vibrate-1 3s linear infinite both;
+    animation: vibrate-1 0.3s linear infinite both;
 }
 
  /*screen 2*/ 
 .screen2 { 
-    margin:16.9rem  auto; 
-    display: flex;
-    flex-direction: column ;  
+    margin:16rem  auto;  
+    width: min(42.8rem, 90%);   
+    height: fit-content;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;  
 
-}
+    border-radius: 5px; 
+    background-color: var(--background-color-card);
+    box-shadow: 0rem 2rem 5rem 0rem rgba(0, 0, 0, 0.80);
+}  
 
-.screen2 #message{
-    background-color: var(--screen2-message);
+.screen2 #message{ 
     margin-top: 1.7rem;
+    background-color: var(--screen2-message); 
     padding: 1rem;
     box-shadow: .2rem .2rem .2rem 0rem rgba(85, 85, 85, 0.50);
-  
-}
+    animation: teste 1.5s both;
+
+} 
 
 .screen2 #message p{ 
     font-family: "Dancing Script", cursive;
     font-size:2.4rem;
     color: var(--color-black);
+
+
+}
+.screen2 img{
+    margin-top: 1.7rem;
+
+}
+.screen2 button{ 
+    margin-top: 1.7rem;
+
+    border: none;
+    background: var(--color-button);
+    color: var(--color-white);
+
+    padding: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+
+    width: 17.4rem;
+
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+.screen2 button:hover{
+    background-color: var(--color-button-hover);
+    color: var(--color-white);
+}
+
+.hide{
+    display: none;
+}
+@keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+
+@keyframes teste {
+    0% {
+        transform: scale(.4) translateY(400px);
+    }
+
+    100% {
+        transform: scale(1) translateY(0);
+    }
 }

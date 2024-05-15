@@ -10,29 +10,35 @@
     
     <link rel="stylesheet" href="style.css">
 
-    <title>Document</title>
+    <title>Biscoito da Sorte</title>
 </head>
 <body>
     <main>
-        <div class="screen1 screen hide">
-            <div class="phrase"> 
-                <h1>Qual é sua sorte de hoje?</h1>
+        <div class="screen1 " >
+            <div class="content"> 
+                <h1>Qual é sua sorte de <br> hoje?</h1>
                 <p>Abra o biscoito e descubra!</p>
-            </div>
-                <a href="">
-                    <img src="./assets/cookie-closed.svg" alt=""> 
-                </a>
-        </div>
-        <div class="screen2 screen ">
-            <div class="phrase">
-                <h1>Aqui está a sua sorte de hoje:</h1>
-                <div id="message">
-                    <p>Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.</p>         
-                </div>
-            </div>
-            <img src="./assets/cookie-opened.svg" alt="">
-        </div>
         
+                <button id="btn-lucky" >
+                    <img src="./assets/cookie-closed.svg" alt=""> 
+                </button> 
+            </div>
+        </div>
+        <div class="screen2 hide" >
+            <div class="content">
+                <h1>Aqui está a sua sorte <br> de hoje:</h1>
+                <div id="message">
+                    <p></p>         
+                </div>
+            
+                <img src="./assets/cookie-opened.svg" alt="">
+                <button id="btn-lucky-reset">
+                    Abrir outro biscoito
+                </button>
+            </div>
+        </div> 
+        
+    <script src="main.js"></script>
     </main>
 </body>
 </html>

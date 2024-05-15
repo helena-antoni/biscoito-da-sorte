@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%; 
+    --background-color-card: #FFFAFA;
+    --color-text: #874938;
+    --screen2-message: #C5EDFF;
+    --color-black:#000;
+}
+.hide{
+    display: none;
+}
+
+.screen{
+    width: min(42.8rem, 90%);   
+    height: fit-content;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;  
+
+    border-radius: 5px; 
+    background-color: var(--background-color-card);
+    box-shadow: 0rem 2rem 5rem 0rem rgba(0, 0, 0, 0.80); 
+}
+.phrase{
+    text-align: center;
+    color:var(--color-text); 
+}
+
+h1{
+    text-align: center; 
+    font-family: "Montserrat", sans-serif;  
+    
+}
+
+p{ 
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400; 
+}
+
+body{
+    font-size: 1.6rem;
+    background: linear-gradient(45deg, #874938 0%, #8b4f24 100%);
+}   
+
+ /*screen 1*/
+.screen1{ 
+    margin:23.9rem auto;  
+} 
+
+.screen1 h1{
+    padding-bottom: 1.4rem; 
+}
+
+.screen1 img{
+    padding-top: 2.6rem;
+}
+
+ /*screen 2*/ 
+.screen2 { 
+    margin:16.9rem  auto; 
+    display: flex;
+    flex-direction: column ;  
+
+}
+
+.screen2 #message{
+    background-color: var(--screen2-message);
+    margin-top: 1.7rem;
+    padding: 1rem;
+    box-shadow: .2rem .2rem .2rem 0rem rgba(85, 85, 85, 0.50);
+  
+}
+
+.screen2 #message p{ 
+    font-family: "Dancing Script", cursive;
+    font-size:2.4rem;
+    color: var(--color-black);
+}
